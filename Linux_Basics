@@ -1,0 +1,74 @@
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
+#1. What are Daemons in Linux?
+A daemon is a program that runs in the background without direct user interaction and waits to perform specific tasks whenever needed.
+
+* Why are Daemons Needed?
+Imagine a computer where every service had to be started manually each time:
+Printing wouldn't work automatically.
+Network connections wouldn't be managed automatically.
+Web servers wouldn't respond to requests continuously.
+
+Daemons solve this problem by running in the background and handling these services automatically.
+ *Common Linux Daemons
+__________________________________________
+| Daemon    | Purpose                    |
+| --------- | -------------------------- |
+| `lpd`     | Print spooling service     |
+| `sshd`    | Handles SSH remote logins  |
+| `cron`    | Runs scheduled tasks       |
+| `systemd` | System and service manager |
+| `httpd`   | Web server daemon          |
+| `named`   | DNS server daemon          |
+|________________________________________|
+
+*Characteristics of Daemons
+* Run in Background
+
+They do not require user interaction.
+
+* Start Automatically
+
+Many daemons start during system boot.
+
+* Provide Services
+
+They wait for requests and respond when needed.
+
+* Long-Lived Processes
+
+They may run for days, weeks, or months until the system shuts down.
+
+#2. Shutdown vs Sleep vs Hibernate
+__________________________________________________________
+| Feature            | Sleep     | Hibernate   | Shutdown |
+| ------------------ | --------- | ----------- | -------- |
+| Power Consumption  | Low       | Almost Zero | Zero     |
+| RAM Active         | Yes       | No          | No       |
+| Current Work Saved | Yes       | Yes         | No       |
+| Resume Speed       | Very Fast | Medium      | Slowest  |
+| Battery Required   | Yes       | No          | No       |
+|_________________________________________________________|
+*Easy Rule
+Short break → Sleep 😴
+Long break but work save rakhna → Hibernate 🐻
+Kaam khatam → Shutdown 🔴
+#3. SSD vs HDD
+____________________________________________________________________
+| Feature           | SSD                | HDD                     |
+| ----------------- | ------------------ | ----------------------- |
+| Technology        | Flash Memory Chips | Spinning Magnetic Disks |
+| Speed             | Very Fast          | Slower                  |
+| Noise             | Silent             | Mechanical Sound        |
+| Power Consumption | Less               | More                    |
+| Durability        | Better             | Less                    |
+| Moving Parts      | No                 | Yes                     |
+| Boot Time         | 5-20 sec           | 30-90 sec               |
+| Price per GB      | Higher             | Lower                   |
+|__________________________________________________________________|
+Real-Life Example 🧠
+
+Maan lo tum padhai kar rahe ho:
+
+Bookshelf (Hard Disk/SSD) = Jahan saari books permanently rakhi hain.
+Study Table (RAM) = Jahan tum current chapter ki books rakh kar padhte ho.
+Tumhara Brain (CPU) = Jo information process karta hai.
